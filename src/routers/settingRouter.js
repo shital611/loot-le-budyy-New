@@ -36,7 +36,7 @@ router.get('/GetAllSettings', async (req, res) => {
 })
 
 // GetSetting
-router.get('/GetSettings',async (req,res)=>{
+router.get('/GetSetting',async (req,res)=>{
     try{
      const getUsers=await settingSchema.find({})
      res.status(201).send(getUsers)
